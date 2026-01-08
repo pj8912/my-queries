@@ -1,0 +1,17 @@
+{
+  "name": "Query Navigator",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Opens a side panel to fetch user queries from LLM chats.",
+  "permissions": ["sidePanel", "scripting", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Query Navigator"
+  }
+}
